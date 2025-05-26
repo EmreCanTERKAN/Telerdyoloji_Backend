@@ -53,7 +53,7 @@ public static class ExtensionsMiddleware
                     LoginId = loginId,
                     FirstName = "Admin",
                     LastName = "User",
-                    Email = "admin@admin.com",
+                    Email = "admin@netcare.com",
                     Phone = "",
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow,

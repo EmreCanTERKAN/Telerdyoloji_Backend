@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace Telerdyoloji_Backend.Domain.Entities;
 [Table("login")]
@@ -44,6 +45,7 @@ public class Login
 
     // Navigation Properties
     [ForeignKey("RoleId")]
+    [JsonIgnore]
     public virtual Role Role { get; set; } = default!;
 
     public virtual User User { get; set; } = default!;
